@@ -1,0 +1,31 @@
+3 Types of Tests:
+    1.  End to End Tests
+            Tests entire application from a User point of view   
+    2.  Integration Tests
+            Tests integrations between parts
+    3.  Unit Tests
+            Tests smallest possible parts of code (ie. Inputs & Outputs)
+
+Protractor:
+    Technologies:
+        Node
+        Selenium
+        WebDriver
+        Jasmine
+        Cucumber
+        Mocha
+
+    Avoids any "sleeps" or "waits" during testing
+    Runs on "headless" browsers too 
+    If running on Chrome, Protractor will not need to use Selenium
+    Install with: "npm install -g protractor" and "webdriver-manager update"
+    Install latest JDK
+    Update the webdriver-manager: (ie."webdriver-manager update")
+        webdriver-manager - runs the Selenium Server
+        Run "webdriver-manager start" to start server on port 4444
+        Launch a example page from: ""
+
+Selenium:
+        Congiguration file at: "C:\Users\[Username here]\AppData\Roaming\npm\node_modules\protractor\example\conf.js"
+        Test Server by opening prompt to above directory and entering: "protractor conf.js"
+                It processes conf.js and tests example_spec.js
