@@ -16,11 +16,13 @@ describe('angularjs homepage', function() {
       browser.get('http://www.angularjs.org');
 
       todoList = element.all(by.repeater('todo in todoList.todos'));
+      console.log('...beforeEach...');
     });
 
     it('should list todos', function() {
       expect(todoList.count()).toEqual(2);
       expect(todoList.get(1).getText()).toEqual('build an AngularJS app');
+      console.log('should list todos');
     });
 
     it('should add a todo', function() {
@@ -32,6 +34,7 @@ describe('angularjs homepage', function() {
 
       expect(todoList.count()).toEqual(3);
       expect(todoList.get(2).getText()).toEqual('write a protractor test');
+      console.log('should add a todo');
     });
   });
 });

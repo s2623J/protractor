@@ -23,9 +23,23 @@ Protractor:
     Update the webdriver-manager: (ie."webdriver-manager update")
         webdriver-manager - runs the Selenium Server
         Run "webdriver-manager start" to start server on port 4444
-        Launch a example page from: ""
 
 Selenium:
         Congiguration file at: "C:\Users\[Username here]\AppData\Roaming\npm\node_modules\protractor\example\conf.js"
         Test Server by opening prompt to above directory and entering: "protractor conf.js"
                 It processes conf.js and tests example_spec.js
+
+Jasmine:
+    Follow example_spec.js as it demonstrates many feature implementations
+    Add console outputs as each section is executed
+    To temporarily disable a section function:
+        ie. xit('should add a todo', function() {
+    
+Promises:
+    3 Stages:
+        Pending
+        Fulfilled
+        Rejected
+    Example:
+        (see image)
+    
