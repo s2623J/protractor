@@ -48,4 +48,8 @@ Page Object Model (POM):
         to provide importable/reusable code for the test page.
 
 Non-Angular Apps:
-    
+    Must ignore synchronization:
+        beforeAll(() => {
+            browser.ignoreSynchronization = true; // Only for testing with non-Angular web pages
+            browser.get('https://google.com');
+        })
