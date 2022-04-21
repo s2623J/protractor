@@ -43,3 +43,6 @@ Promises:
     Example:
         (see image)
     
+Page Object Model (POM):
+    Creating a seperate module for each page tested (seperate from the actual testing page) 
+        to provide importable/reusable code for the test page.
